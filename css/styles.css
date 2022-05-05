@@ -1,0 +1,251 @@
+:root{
+
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300:  #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500:  #757FB2;
+
+    --gray-100: #CED4DA;;
+    --gray-200:  #ADB5BD;
+    --gray-300:  #868E96;
+    --gray-400: #495057;
+    --gray-500:  #343A40;
+
+    --font-size-title: 24px;
+    --font-size-text: 16px;
+    --font-size-encript: 32px;
+
+}
+
+html {
+    box-sizing: border-box;
+      font-size: 62.5%; 
+   }
+    *, *:before, *:after {
+      box-sizing: inherit;
+   }
+   
+body{
+    background-color: var(--gray-200);
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 98rem;
+    height: 65rem;
+    padding: 1rem;
+}
+
+.contenedor-header{
+    margin: auto;
+    max-width: 98rem;
+    padding: 10px;
+}
+
+.contenedor-left{
+    width: 60%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.contenedor-right{
+    width: 30%;
+    max-width: 30rem;
+    float: right;
+    height: auto;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 12px 12px 3px -4px #989898 ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+.texto{
+    max-width: 75%;
+    width: 70rem;
+    height: 30rem;
+    margin: 5rem 0;
+    border: none;
+    outline: none;
+    resize: none;
+    text-transform: lowercase;
+    background-color: var(--gray-200);
+    color: var(--dark-blue-400);
+    font-size: var(--font-size-title);
+}
+
+.texto::placeholder{
+    color: var(--dark-blue-400);
+    font-size: var(--font-size-title);
+    text-transform: none;
+}
+
+.parrafo{
+    width: 75%;
+    font-size: var(--font-size-text);
+    color: var(--gray-400);
+    
+}
+
+.simbol{   
+    background:var(--gray-400);
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.75rem;  
+}
+
+.texto2{
+    width: 85%;
+    height: 13rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: white;
+    font-size: var(--font-size-text);
+    text-transform: lowercase;
+    margin-top: 2rem;  
+}
+
+.texto2::placeholder{
+    text-transform: none;
+    text-align: center;
+}
+
+.text-title{
+    margin: 0 1rem;
+}
+
+.area-actualizada{
+    height: 43.5rem;
+}
+
+.button-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;  
+}
+
+.button-area{
+    border-radius:2rem;
+    border: none;
+    width: 40%;
+    height: 4rem;
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-size-text);
+    background-color: var(--dark-blue-400);
+    box-shadow: 12px 12px 3px -4px #989898 ;
+}
+
+.button-area:hover{
+    background-color: var(--dark-blue-300);
+}
+
+.img-right{
+    max-width: 22rem;
+    max-height: 22rem;
+    margin-top: 6rem;  
+}
+
+.img-none{
+    display: none;
+}
+
+.copiar{
+    border-radius:2rem;
+    border: none;
+    width: 50%;
+    height: 4rem;
+    margin: 1rem 0;
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-size-text);
+    background-color: var(--dark-blue-400);
+    visibility: hidden;
+}
+
+.copiar-visible{
+    visibility: visible;
+}
+
+.title-none{
+    display: none;
+}
+
+@media (max-width: 768px) { 
+  
+    .contenedor-header{
+        width: 100%;
+       
+        
+    }
+    
+    .contenedor-left{
+       
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+            
+    }
+    
+    .contenedor-right{
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .texto{
+        max-width: 100%;
+        height: 30rem;
+ 
+    }
+
+    .parrafo{
+        width: 100%;
+    }
+
+    .button-flex{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-area{
+        margin: 1rem;
+        min-width: 20rem;
+    }
+
+    .img-right{
+        display: none;
+    }
+    
+    .text-title{
+        margin-top: 3rem;
+    }
+
+    .area-actualizada{
+        height: 10rem;
+    }
+}
